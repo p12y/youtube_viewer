@@ -1,10 +1,14 @@
 import React from 'react';
-import { Embed, Card } from 'semantic-ui-react';
+import { Embed, Card, Dimmer, Loader } from 'semantic-ui-react';
 
 
 const Video = ({video}) => {
   if (!video) {
-    return <div>Loading...</div>;
+    return (
+      <Dimmer active inverted>
+        <Loader size="medium" inverted>Loading</Loader>
+      </Dimmer>
+    );
   }
 
   return (
