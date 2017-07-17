@@ -1,9 +1,9 @@
 import React from 'react';
 import { Image as ImageComponent, Item } from 'semantic-ui-react';
 
-const VideoListItem = ({video}) => {
+const VideoListItem = ({video, onSelect}) => {
   return (
-    <Item>
+    <Item as="a" onClick={() => onSelect(video)}>
       <Item.Image size='small' src={video.snippet.thumbnails.default.url} />
       <Item.Content>
         <Item.Header>{video.snippet.title}</Item.Header>

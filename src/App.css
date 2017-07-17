@@ -1,3 +1,7 @@
 .items > .item > .content {
   font-size: 0.9em !important;
 }
+
+.item {
+  cursor: pointer;
+}
