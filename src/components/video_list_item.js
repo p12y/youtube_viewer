@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image as ImageComponent, Item } from 'semantic-ui-react';
+import {Item} from 'semantic-ui-react';
 
 const VideoListItem = ({video, onSelect}) => {
   return (
